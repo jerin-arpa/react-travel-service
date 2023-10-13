@@ -11,8 +11,8 @@ const Sundarbans = () => {
                     <div>
                         <div className="px-5 lg:px-20">
                             <Navbar></Navbar>
-                            <div className="flex flex-col lg:flex-row gap-20 justify-between container mx-auto">
-                                <div className="flex flex-col lg:flex-row gap-20 justify-between px-5 py-56">
+                            <div className="flex flex-col lg:flex-row gap-20 justify-between container mx-auto py-56">
+                                <div className="flex flex-col lg:flex-row gap-20 justify-between px-5">
                                     <div className="flex items-center">
                                         <div>
                                             <h1 className="mb-5 text-6xl md:text-7xl lg:text-9xl font-bold">SUNDARBANS</h1>
