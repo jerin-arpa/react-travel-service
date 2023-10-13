@@ -9,6 +9,9 @@ import Root from './Pages/Root/Root';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
+import Sajek from './Components/TravelPlace/Sajek';
+import Sreemangal from './Components/TravelPlace/Sreemangal';
+import Sundarbans from './Components/TravelPlace/Sundarbans';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +45,18 @@ const router = createBrowserRouter([
       {
         path: '/signup',
         element: <SignUp></SignUp>
+      },
+      {
+        path: '/sajek',
+        element: <Sajek></Sajek>
+      },
+      {
+        path: '/sreemangal',
+        element: <Sreemangal></Sreemangal>
+      },
+      {
+        path: '/sundarbans',
+        element: <Sundarbans></Sundarbans>
       },
     ]
   },

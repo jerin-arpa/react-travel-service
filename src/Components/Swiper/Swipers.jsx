@@ -11,6 +11,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { Link } from 'react-router-dom';
 
 
 const Swipers = () => {
@@ -19,7 +20,7 @@ const Swipers = () => {
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}
-                slidesPerView={2}
+                slidesPerView={1.5}
                 navigation={{
                     prevEl: '.prev',
                     nextEl: '.next',
@@ -27,41 +28,29 @@ const Swipers = () => {
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
             >
-                <SwiperSlide className='border-8 rounded-3xl border-yellow-500'>
-                    <div className='absolute bottom-0 pl-5 pb-5'>
-                        <p className='text-4xl'>Sajek</p>
-                    </div>
-                    <img src={image1} alt="" />
+                <SwiperSlide className='border-8 rounded-xl md:rounded-3xl lg:rounded-3xl border-yellow-500'>
+                    <Link to='/sajek'>
+                        <div className='absolute bottom-0 pl-1 md:pl-2 lg:pl-5 pb-1 md:pb-2 lg:pb-5'>
+                            <p className='md:text-xl lg:text-4xl'>Sajek</p>
+                        </div>
+                        <img src={image1} alt="" />
+                    </Link>
                 </SwiperSlide>
-                <SwiperSlide className='border-8 rounded-3xl border-yellow-500'>
-                    <div className='absolute bottom-0 pl-5 pb-5'>
-                        <p className='text-4xl'>Sreemongol</p>
-                    </div>
-                    <img src={image2} alt="" />
+                <SwiperSlide className='border-8 rounded-xl md:rounded-3xl lg:rounded-3xl border-yellow-500'>
+                    <Link to='sreemangal'>
+                        <div className='absolute bottom-0 pl-1 md:pl-2 lg:pl-5 pb-1 md:pb-2 lg:pb-5'>
+                            <p className='md:text-xl lg:text-4xl'>Sreemongol</p>
+                        </div>
+                        <img src={image2} alt="" />
+                    </Link>
                 </SwiperSlide>
-                <SwiperSlide className='border-8 rounded-3xl border-yellow-500'>
-                    <div className='absolute bottom-0 pl-5 pb-5'>
-                        <p className='text-4xl'>sundorbon</p>
-                    </div>
-                    <img src={image3} alt="" />
-                </SwiperSlide>
-                <SwiperSlide className='border-8 rounded-3xl border-yellow-500'>
-                    <div className='absolute bottom-0 pl-5 pb-5'>
-                        <p className='text-4xl'>Sajek</p>
-                    </div>
-                    <img src={image1} alt="" />
-                </SwiperSlide>
-                <SwiperSlide className='border-8 rounded-3xl border-yellow-500'>
-                    <div className='absolute bottom-0 pl-5 pb-5'>
-                        <p className='text-4xl'>Sreemongol</p>
-                    </div>
-                    <img src={image2} alt="" />
-                </SwiperSlide>
-                <SwiperSlide className='border-8 rounded-3xl border-yellow-500'>
-                    <div className='absolute bottom-0 pl-5 pb-5'>
-                        <p className='text-4xl'>sundorbon</p>
-                    </div>
-                    <img src={image3} alt="" />
+                <SwiperSlide className='border-8 rounded-xl md:rounded-3xl lg:rounded-3xl border-yellow-500'>
+                    <Link to='sundarbans'>
+                        <div className='absolute bottom-0 pl-1 md:pl-2 lg:pl-5 pb-1 md:pb-2 lg:pb-5'>
+                            <p className='md:text-xl lg:text-4xl'>sundorbon</p>
+                        </div>
+                        <img src={image3} alt="" />
+                    </Link>
                 </SwiperSlide>
             </Swiper>
         </div>
