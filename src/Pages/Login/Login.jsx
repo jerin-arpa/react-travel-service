@@ -3,6 +3,14 @@ import Navbar from "../../Components/Navbar/Navbar";
 
 
 const Login = () => {
+
+    const handleLogin = e => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        console.log(email, password);
+    }
+
     return (
         <div>
             <div className="text-white">
@@ -16,7 +24,7 @@ const Login = () => {
                                 <div className="flex justify-center my-12 lg:my-32 container mx-auto px-5">
                                     <div className="border-2 rounded-xl w-full md:w-3/4 lg:w-2/4 py-8">
                                         <h2 className="text-3xl font-bold text-center pt-10 pb-5"><span className="text-yellow-500">Login</span> your account</h2>
-                                        <form className="px-4 md:px-14">
+                                        <form onSubmit={handleLogin} className="px-4 md:px-14">
                                             <input type="email" name="email" placeholder="Enter your email" className="p-3 mb-3 bg-transparent border-b-2 w-full" />
                                             <input type="password" name="password" placeholder="Enter your password" className="p-3 mb-3 bg-transparent border-b-2 w-full" />
 

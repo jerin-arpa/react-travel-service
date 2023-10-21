@@ -15,7 +15,7 @@ const Banner = () => {
                             <div className="flex items-center">
                                 <div>
                                     <h1 className="mb-5 text-6xl md:text-7xl lg:text-9xl font-bold">Cox's bazar</h1>
-                                    <p className="mb-5 text-xl lg:text-3xl">Cox's Bazar is a city, fishing port, tourism centre and <br /> district headquarters in southeastern Bangladesh. It is  <br />famous mostly for its long natural sandy beach, and it ...</p>
+                                    <p className="mb-5 text-xl lg:text-3xl">Cox's Bazar is a city, fishing port, tourism centre and district headquarters in southeastern Bangladesh. It is famous mostly for its long natural sandy beach, and it ...</p>
                                     <button className="btn bg-yellow-500 border-none text-xl lg:text-3xl">Booking</button>
                                 </div>
                             </div>
